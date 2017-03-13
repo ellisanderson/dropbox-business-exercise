@@ -1,0 +1,130 @@
+body {
+  min-height: 2000px; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, a, hr {
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  color: #637282; }
+
+header {
+  height: 40px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  background-color: white; }
+  header a.logo {
+    float: left;
+    margin-top: 5px;
+    text-decoration: none; }
+  header .fa-bars {
+    float: right;
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-right: 40px;
+    color: #0070E0; }
+  header .nav {
+    float: right;
+    margin-top: 2px;
+    margin-right: 40px;
+    display: none; }
+    header .nav a {
+      float: left;
+      text-decoration: none;
+      color: #637282;
+      font-size: .9rem; }
+      header .nav a li {
+        list-style-type: none;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 9px 15px; }
+        header .nav a li .fa {
+          position: relative;
+          bottom: 4px; }
+      header .nav a .nav-button {
+        border: 1px solid #637282;
+        border-radius: 5px;
+        padding: 8px 15px;
+        margin-left: 10px;
+        color: #0070E0;
+        transition: background-color 500ms ease-in 1s; }
+      header .nav a .nav-button:hover {
+        border: 1px solid #0070E0; }
+    header .nav a:hover li {
+      color: black; }
+
+.hero {
+  background-color: #E3EEFC;
+  padding-top: 80px; }
+  .hero .container {
+    background-image: url(../images/background.jpg);
+    background-position: 130px center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .hero .container .hero-text {
+      padding: 80px 20px;
+      width: 300px; }
+      .hero .container .hero-text h1 {
+        font-size: 1.7rem; }
+      .hero .container .hero-text h3 {
+        margin: 30px 0 60px;
+        font-size: 1.1rem; }
+      .hero .container .hero-text button {
+        display: block;
+        padding: 15px 40px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: #0070E0;
+        margin-bottom: 20px;
+        font-weight: 100; }
+      .hero .container .hero-text button:hover {
+        background-color: #3398EA;
+        cursor: pointer; }
+      .hero .container .hero-text span {
+        margin-left: 40px; }
+        .hero .container .hero-text span a {
+          color: #0070E0; }
+        .hero .container .hero-text span a:hover {
+          color: #3398EA; }
+
+@media (min-width: 600px) {
+  .container {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain; } }
+@media (min-width: 767px) {
+  .hero .container {
+    min-height: 550px;
+    background-position: 130px center;
+    background-size: contain; }
+    .hero .container .hero-text {
+      padding: 175px 20px; }
+      .hero .container .hero-text h1 {
+        font-size: 2rem; }
+      .hero .container .hero-text span {
+        margin: 0; } }
+@media (min-width: 900px) {
+  .hero .container {
+    background-position: right center; } }
+@media (min-width: 1024px) {
+  header .fa-bars {
+    display: none; }
+  header .nav {
+    display: block; } }
+@media (min-width: 1200px) {
+  .hero .container .hero-text {
+    margin-left: 10%;
+    width: 460px;
+    padding: 130px 0 175px; }
+    .hero .container .hero-text h1 {
+      font-size: 3.3rem; }
+    .hero .container .hero-text h3 {
+      font-size: 1.4rem;
+      line-height: 2rem; }
+    .hero .container .hero-text button {
+      font-size: 1.4rem; } }
+
+/*# sourceMappingURL=styles.css.map */
